@@ -1,0 +1,148 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.container {
+  max-width: 1320px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.header {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+.header__nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header__list {
+  display: flex;
+  gap: 30px;
+}
+.header__logo {
+  font-size: 40px;
+  color: lightblue;
+  text-transform: uppercase;
+}
+.header__link {
+  color: #fff;
+  font-size: 20px;
+}
+.header__fan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+  z-index: -1;
+}
+.header__cloud {
+  position: absolute;
+  mix-blend-mode: overlay;
+}
+.cloud1{
+  top: 15%;
+  left: 5%;
+}
+
+.cloud2{
+  top: 15%;
+  left: 40%;
+}
+.cloud3{
+  top: 15%;
+  left: 75%;
+}
+.headr__boat {
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+}
+
+.header__title  {
+  font-size: 60px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: #fff;
+  text-shadow: 5px 5px 10px #000;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  padding-bottom: 500px;
+}
+.about { 
+  padding: 50px 0;
+}
+.about .container {
+  display: flex;
+  justify-content: space-between;
+}
+.scroll__card {
+  width: 255px;
+  height: 255px;
+  background: #000;
+  border-radius: 15px;
+}
+.scroll__card {
+  transform: translateX(-200px);
+  opacity: 0;
+}
+.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.parallax {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.parallax__title {
+  font-size: 60px;
+  text-align: center;
+}
+.parallax__box {
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+}
+.parallax__banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.parallax__ball {
+  position: absolute;
+}
+.layer1 {
+  top: 15%;
+  left: 15%;
+}
+.layer2 {
+  top: 10%;
+  right: 20%;
+}
