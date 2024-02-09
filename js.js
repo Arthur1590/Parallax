@@ -26,43 +26,6 @@ const parallax = new Parallax({
   boat: ".headr__boat",
 });
 
-// animate txt
-
-// class Text {
-//   constructor(title) {
-//     this.text = document.querySelector(title);
-//     this.fullText = this.text.innerHTML;
-//     this.text.innerHTML = "";
-//     this.str();
-//     this.del();
-//     this.reload();
-//   }
-
-//   str(x = 0) {
-//     this.text.innerHTML += this.fullText[x];
-//     x++;
-//     if (x < this.fullText.length) {
-//       setTimeout(() => {
-//         this.str(x);
-//       }, 300);
-//     }
-//   }
-//   reload() {
-//     let x = this.fullText.length
-//     setTimeout(() => {
-//       this.del(x)
-//     }, x * 300 + 100)
-//   }
-//   del(x) {
-//     x--;
-//     this.text.innerHTML = this.fullText.slice(0, x);
-//     if (x > 0) {
-//       setTimeout(() => {
-//         this.reload(x);
-//       }, 300);
-//     }
-//   }
-// }
 
 class Text {
   constructor(title) {
